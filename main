@@ -1,5 +1,4 @@
 import numpy as np
-from utils.loaddata import load_data
 from utils.SVMProj import SVMProj
 
 if __name__ == '__main__':

@@ -1,0 +1,19 @@
+import numpy as np
+from utils.loaddata import load_data
+from utils.SVMProj import SVMProj
+
+if __name__ == '__main__':
+    # Datasets
+    X_train, y_train = load_data(dataset='train data set')
+    X_test, y_test = load_data(dataset='test data set')
+
+    # Training
+    model = SVMProj(X_train, y_train)
+    model.fit()
+
+    # Testing
+    test_pre = model.predict(X_test)
+
+    # Test accuracy
+    # test_acc = (np.sum(y_test == test_pre) / len(y_test)) * 100
+    # print('test_acc:', np.around(np.mean(test_acc), 2))

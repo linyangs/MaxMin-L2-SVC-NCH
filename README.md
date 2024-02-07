@@ -12,4 +12,4 @@ Datasets
 Please uploa the data set in function load_data according to your needs.
 
 SVM Model
-The SVM model is implemented in the SVMProj class (implemented in utils/SVMProj.py). This class contains methods for training, prediction, and evaluating the SVM model.
+The SVM model is implemented in the SVMProj class (implemented in utils/SVMProj.py). The main function contains methods for training and testing the model.
